@@ -1,0 +1,3 @@
+# Main ignore, not specific like in api or website directories
+.DS_Store
+.swp
