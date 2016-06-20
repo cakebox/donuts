@@ -1,0 +1,3 @@
+<?php
+
+$app["donuts.rpc_address"] = "http://user:passwd@domain.com/RPC";
