@@ -1,7 +1,5 @@
 <?php
 
-namespace Donuts;
-
 require_once __DIR__ . "/../vendor/autoload.php";
 
 use Silex\Application;
@@ -16,9 +14,10 @@ if (APPLICATION_ENV != "production") {
 }
 
 require_once __DIR__ . '/../config/configuration.php';
+require_once __DIR__ . '/routing.php';
 
 // Include controllers and models
-foreach (glob(__DIR__ . "/*.php", GLOB_BRACE) as $file) {
+foreach (glob(__DIR__ . "/Donuts/*.php", GLOB_BRACE) as $file) {
     require_once $file;
 }
 
