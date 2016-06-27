@@ -1,3 +1,3 @@
 <?php
 
-$app->get("/torrents",  __NAMESPACE__ . "\\getTorrents");
+$app->get("/torrents", "Donuts\Torrent::getTorrents");
